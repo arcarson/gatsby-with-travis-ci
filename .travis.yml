@@ -2,13 +2,9 @@
 language: cpp
 sudo: false
 env:
-  - export NODE_VERSION="0.10"
-  - export NODE_VERSION="0.12"
-  - export NODE_VERSION="4"
   - export NODE_VERSION="5"
 os:
   - linux
-  - osx
 # pre-install to bring in the correct version of node via nvm
 before_install:
   - git submodule update --init --recursive
@@ -36,5 +32,4 @@ addons:
 # script needed to test, because defaults don't work on osx
 script:
   - npm install
-  - npm run lint
   - gatsby build
