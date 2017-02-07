@@ -37,3 +37,4 @@ addons:
 script:
   - npm install
   - npm run lint
+  - gatsby build
