@@ -33,3 +33,4 @@ addons:
 script:
   - npm install
   - gatsby build
+  - ls public
