@@ -13,4 +13,4 @@ git add .
 git commit -m "Deploy to Github Pages"
 
 echo "deploying"
-git push --force "https://${GITHUB_API_KEY}@github.com/arcarson/gatsby-with-travis-ci.git" master:gh-pages
+git push --force --quiet "https://${GITHUB_API_KEY}@github.com/arcarson/gatsby-with-travis-ci.git" master:gh-pages > /dev/null 2>&1
