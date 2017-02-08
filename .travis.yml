@@ -33,4 +33,6 @@ addons:
 script:
   - npm install
   - gatsby build
-  - ls public
+
+after_success:
+  - bash deploy.sh
