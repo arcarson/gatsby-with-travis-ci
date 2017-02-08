@@ -4,6 +4,8 @@ echo "setting config"
 git config --global user.email "far@bar.com"
 git config --global user.name "Travis CI"
 
+cat ~/.gitconfig
+
 echo "init repo + commit"
 cd public
 git init
