@@ -31,10 +31,8 @@ addons:
     - gcc-4.8
 # script needed to test, because defaults don't work on osx
 script:
-  - echo "scripts"
   - npm install
   - gatsby build
 
 after_success:
-  - echo "after success"
-  - bash ./deploy.sh
+  - ./deploy.sh
